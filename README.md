@@ -1,2 +1,2 @@
-# fhict
-School projects for FHICT
+# fhict portfolio
+School portfolio for FHICT
