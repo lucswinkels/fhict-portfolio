@@ -1,4 +1,4 @@
-// Border Radius
+// Border radius
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
@@ -15,7 +15,7 @@
     transition: $args;
 }
 
-// Box Shadow
+// Box shadow
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
     @if $inset {
         -webkit-box-shadow: inset $top $left $blur $color;

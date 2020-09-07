@@ -1,4 +1,4 @@
-// Base Styling
+// Base styling
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -14,7 +14,7 @@
     }
 }
 
-// Body Styles
+// Body styles
 body,
 html {
     width: 100%;
@@ -41,19 +41,6 @@ body::-webkit-scrollbar-track {}
 
 ::selection {}
 
-// Clearfix
-.c-f {
-
-    &:after,
-    &:before {
-        content: "";
-        display: table;
-    }
-
-    &:after {
-        clear: both;
-    }
-}
 
 // Flexbox variable
 %flexbox {
