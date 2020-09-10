@@ -1,1 +1,20 @@
 // Buttons
+.button {
+    padding: 25px 30px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-family: $font-buttons;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    @include border-radius(35px);
+}
+
+.button--purple {
+    @include gradient(60deg, $violet);
+}
+
+.button--red {
+    @include gradient(60deg, $flame);
+}

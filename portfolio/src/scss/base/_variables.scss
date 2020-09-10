@@ -1,5 +1,5 @@
 // Imports
-@import url("https://fonts.googleapis.com/css?family=Poppins:600");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400:700");
 // Fonts
 $font-heading: Poppins,
 sans-serif;
@@ -10,15 +10,24 @@ sans-serif;
 $font-nav: Poppins,
 sans-serif;
 // Whites
-$white: #efefef;
+$off-white: #F1F1F1;
 $pure-white: #ffffff;
 // Blacks
-$black: #212121;
+$soft-black: #393939;
 $pure-black: #000;
 // Colors
-$blue:#0034a3;
-$red:#cc003d;
+$purple:#6767FF;
+$red:#FF0045;
+$blue:#B1D5FF;
 // Variables
-$body-bg: $white;
-$primary: $blue;
-$secondary: $red;
+$body-bg: $off-white;
+$primary-color: $purple;
+$secondary-color: $red;
+$tertiary-color:$blue;
+// Gradients
+$violet: $purple,
+#c1c1ff;
+$flame: $red,
+#ff97b3;
+$sky: $blue,
+#add3ff;
