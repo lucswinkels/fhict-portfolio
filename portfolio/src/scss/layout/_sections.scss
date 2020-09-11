@@ -42,6 +42,12 @@ section {
 
 
   &.over {
+    p {
+      @include breakpoint(mobileonly) {
+        margin-top: 70px;
+      }
+    }
+
     a {
       margin-right: 15px;
       padding: 5px;
@@ -136,12 +142,10 @@ section {
       background-size: cover;
       @include border-radius(15px);
       height: 30vh;
-      filter: grayscale(100%);
       @include transition(all .4s ease);
       box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16);
 
       &:hover {
-        filter: grayscale(0%);
         transform: translateY(-6px);
         box-shadow: 0 19px 38px rgba(50, 50, 50, 0.30), 0 15px 12px rgba(50, 50, 50, 0.22);
       }
@@ -160,4 +164,39 @@ section {
       }
     }
   }
+
+  &.project-listing {
+    h1 {
+      margin-bottom: 12vh;
+    }
+
+    .project-group {
+      margin-bottom: 15vh;
+      @extend %flexbox;
+      align-items: center;
+
+      .project-description {
+        h2 {
+          margin-bottom: 30px;
+          font-size: calc(25px + 2vw);
+        }
+
+        p {
+          margin-bottom: 30px;
+        }
+      }
+
+      .project-image {
+        img {
+          @include border-radius(15px);
+          width: 35vw;
+          margin-right: 5vw;
+          @include transition(all .4s ease);
+          box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16);
+        }
+      }
+    }
+
+  }
+
 }

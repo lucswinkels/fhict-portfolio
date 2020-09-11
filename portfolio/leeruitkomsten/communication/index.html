@@ -22,17 +22,88 @@
     <link rel="stylesheet" href="../../src/css/main.min.css" />
     <!-- Icon Font -->
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.8.2/css/pro.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../src/img/favicon/favicon.svg" type="image/x-icon">
     <link rel="icon" href="../../src/img/favicon/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
+    <!-- Cursor -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+    <!-- /Cursor -->
+
+    <!-- Nav -->
+    <nav>
+        <ul>
+            <div class="flex">
+                <li>
+                    <a href="/" class="logo">
+                        <img src="../../src/img/logo/ls-logo-primair-zwart.svg" alt="">
+                    </a>
+                </li>
+                <div>
+                    <li><a href="/over/">Over</a></li>
+                    <li><a href="/leeruitkomsten/">Leeruitkomsten</a></li>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <!-- /Nav -->
+
+    <!-- Content -->
+    <section class="communication project-listing" id="communication">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="flame" data-aos="fade-up" data-aos-duration="400">Communication</h1>
+                </div>
+            </div>
+            <div class="row project-group">
+                <div class="col project-image" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <a href="project-1"><img
+                            src="../../src/img/thumbnails/projects/communication/communication-project-1.jpg"></a>
+                </div>
+                <div class="col project-description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <h2>Coming Soon..</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eos voluptatibus aperiam
+                        facere illo sed iure sequi, atque ratione aspernatur corporis pariatur ab quisquam eveniet
+                        maxime. Esse corporis inventore, molestiae at pariatur adipisci nemo sunt et sint mollitia
+                        voluptatibus quos!</p>
+                    <a href="project-1" class="btn btn--purple">Case Study</a>
+                </div>
+            </div>
+            <div class="row project-group">
+                <div class="col project-image" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <a href="project-2"><img
+                            src="../../src/img/thumbnails/projects/communication/communication-project-2.jpg"></a>
+                </div>
+                <div class="col project-description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <h2>Coming Soon..</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eos voluptatibus aperiam
+                        facere illo sed iure sequi, atque ratione aspernatur corporis pariatur ab quisquam eveniet
+                        maxime. Esse corporis inventore, molestiae at pariatur adipisci nemo sunt et sint mollitia
+                        voluptatibus quos!</p>
+                    <a href="project-2" class="btn btn--red">Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Content -->
 
 </body>
 
 <!-- JS Sources -->
 <script src="../../src/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- /JS Sources -->
+
+<!-- JS -->
+<script>
+    AOS.init();
+</script>
+<!-- /JS -->
 
 </html>

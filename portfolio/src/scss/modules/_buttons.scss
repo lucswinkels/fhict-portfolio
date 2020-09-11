@@ -1,6 +1,6 @@
 // Buttons
-.button {
-    padding: 25px 30px;
+.btn {
+    padding: 20px 25px;
     text-align: center;
     display: inline-block;
     color: white;
@@ -9,12 +9,19 @@
     font-size: 16px;
     text-decoration: none;
     @include border-radius(35px);
+    @include transition(all .3s ease);
+
+    &:hover {
+        filter: grayscale(0%);
+        transform: translateY(-6px);
+        box-shadow: 0 9px 19px rgba(100, 100, 100, 0.22), 0 7px 6px rgba(100, 100, 100, 0.16);
+    }
 }
 
-.button--purple {
+.btn--purple {
     @include gradient(60deg, $violet);
 }
 
-.button--red {
+.btn--red {
     @include gradient(60deg, $flame);
 }
