@@ -1,7 +1,7 @@
 // General section
 section {
-  padding-top: 30vh;
-  padding-bottom: 30vh;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
 
   h1 {
     font-size: calc(30px + 3vw);
@@ -44,18 +44,119 @@ section {
   &.over {
     a {
       margin-right: 15px;
-      padding-bottom: 5px;
+      padding: 5px;
 
       &:link {
         background-position-y: -0%;
         background-image: linear-gradient($body-bg 50%, $primary-color 50%);
-        transition: background 350ms ease;
+        @include transition(background 350ms ease);
         background-size: 2px;
         background-size: auto 185%;
       }
 
       &:hover {
         background-position-y: 100%;
+      }
+    }
+  }
+
+  &.leeruitkomsten {
+    h1 {
+      margin-bottom: 0;
+    }
+
+    .tiles {
+      text-align: center;
+
+      @include breakpoint(mobileonly) {
+        text-align: left;
+        margin-top: 20px;
+      }
+    }
+
+    .interactive-media {
+      .tile {
+        background-image: url(../../../src/img/thumbnails/interactive-media.jpg);
+      }
+    }
+
+    .development {
+      .tile {
+        background-image: url(../../../src/img/thumbnails/development.jpg);
+      }
+    }
+
+    .design {
+      .tile {
+        background-image: url(../../../src/img/thumbnails/design.jpg);
+      }
+    }
+
+    .research {
+      .tile {
+        background-image: url(../../../src/img/thumbnails/research.jpg);
+      }
+    }
+
+    .communication {
+      .tile {
+        background-image: url(../../../src/img/thumbnails/communication.png);
+      }
+    }
+
+    .professional-identity {
+      .tile {
+        background-image: url(../../../src/img/thumbnails/professional-identity.png);
+      }
+    }
+
+    .col-lg-4 {
+      padding: 0;
+      margin: 50px auto 0;
+
+      @media (min-width: 992px) {
+        flex: 0 0 30%;
+      }
+
+
+      @include breakpoint(mobileonly) {
+        text-align: left;
+        margin-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &.interactive-media {
+          margin-top: 70px;
+        }
+      }
+    }
+
+    .tile {
+      margin-top: 20px;
+      background-size: cover;
+      @include border-radius(20px);
+      height: 30vh;
+      filter: grayscale(100%);
+      @include transition(all .4s ease);
+      box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16);
+
+      &:hover {
+        filter: grayscale(0%);
+        transform: translateY(-10px);
+        box-shadow: 0 19px 38px rgba(50, 50, 50, 0.30), 0 15px 12px rgba(50, 50, 50, 0.22);
+      }
+
+      @include breakpoint(mobileonly) {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+        height: 40vh;
+
+        &:hover {
+          transform: translateY(0px);
+          box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16);
+        }
       }
     }
   }
