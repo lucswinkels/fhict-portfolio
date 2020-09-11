@@ -155,7 +155,7 @@ section {
         margin-left: 0;
         margin-right: 0;
         margin-top: 10px;
-        height: 40vh;
+        max-height: calc(70px + 20vh);
 
         &:hover {
           transform: translateY(0px);
@@ -176,6 +176,10 @@ section {
       align-items: center;
 
       .project-description {
+        @include breakpoint(mobileonly) {
+          flex: 100%;
+        }
+
         h2 {
           margin-bottom: 30px;
           font-size: calc(25px + 2vw);
@@ -193,6 +197,13 @@ section {
           margin-right: 5vw;
           @include transition(all .4s ease);
           box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16);
+
+          @include breakpoint(mobileonly) {
+            margin-right: 0;
+            width: 100%;
+            max-height: calc(70px + 20vh);
+            margin-bottom: 20px;
+          }
         }
       }
     }
