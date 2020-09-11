@@ -6,10 +6,13 @@ h4,
 h5,
 h6 {
     font-family: $font-heading;
+    font-weight: bold;
+    color: $pure-black;
 }
 
 p {
     font-family: $font-paragraph;
+    color: $soft-black;
 }
 
 span {
@@ -18,6 +21,8 @@ span {
 
 a {
     text-decoration: none;
+    font-family: $font-paragraph;
+    color: $soft-black;
 
     &:hover,
     &:focus {

@@ -37,9 +37,15 @@ body::-webkit-scrollbar-corner {}
 body::-webkit-scrollbar-track {}
 
 // Selection
-::-moz-selection {}
+::-moz-selection {
+    background-color: $red;
+    color: $pure-white;
+}
 
-::selection {}
+::selection {
+    background-color: $red;
+    color: $pure-white;
+}
 
 
 // Flexbox variable

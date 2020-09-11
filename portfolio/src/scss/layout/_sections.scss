@@ -1,7 +1,62 @@
 // General section
 section {
-  padding-top: 20vh;
-  padding-bottom: 20vh;
-}
+  padding-top: 30vh;
+  padding-bottom: 30vh;
 
-// Specific sections
+  h1 {
+    font-size: calc(30px + 3vw);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+
+    &::before {
+      content: "";
+      height: 150px;
+      width: 150px;
+      @include border-radius(50%);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    &.violet::before {
+      @include gradient(60deg, $violet);
+    }
+
+    &.flame::before {
+      @include gradient(60deg, $flame);
+    }
+
+    &.sky::before {
+      @include gradient(60deg, $sky);
+    }
+  }
+
+  p,
+  a {
+    line-height: 25px;
+    font-size: 15px;
+  }
+
+
+  &.over {
+    a {
+      margin-right: 15px;
+      padding-bottom: 5px;
+
+      &:link {
+        background-position-y: -0%;
+        background-image: linear-gradient($body-bg 50%, $primary-color 50%);
+        transition: background 350ms ease;
+        background-size: 2px;
+        background-size: auto 185%;
+      }
+
+      &:hover {
+        background-position-y: 100%;
+      }
+    }
+  }
+}
