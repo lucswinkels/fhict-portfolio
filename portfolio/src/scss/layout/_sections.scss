@@ -17,8 +17,10 @@ section {
       position: absolute;
       top: 50%;
       left: 0;
-      transform: translate(-50%, -50%);
+      transform: translate(-90%, -90%);
       z-index: -1;
+      animation: circle-dash 1s forwards;
+      opacity: 0;
     }
 
     &.violet::before {
@@ -31,6 +33,13 @@ section {
 
     &.sky::before {
       @include gradient(60deg, $sky);
+    }
+
+    @keyframes circle-dash {
+      100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 
@@ -50,19 +59,7 @@ section {
 
     a {
       margin-right: 15px;
-      padding: 5px;
-
-      &:link {
-        background-position-y: -0%;
-        background-image: linear-gradient($body-bg 50%, $primary-color 50%);
-        @include transition(background 350ms ease);
-        background-size: 2px;
-        background-size: auto 185%;
-      }
-
-      &:hover {
-        background-position-y: 100%;
-      }
+      font-weight: bold;
     }
   }
 
