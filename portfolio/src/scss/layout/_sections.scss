@@ -132,9 +132,9 @@ section {
     }
 
     .tile {
-      margin-top: 20px;
+      margin-top: 15px;
       background-size: cover;
-      @include border-radius(20px);
+      @include border-radius(15px);
       height: 30vh;
       filter: grayscale(100%);
       @include transition(all .4s ease);
@@ -142,7 +142,7 @@ section {
 
       &:hover {
         filter: grayscale(0%);
-        transform: translateY(-10px);
+        transform: translateY(-6px);
         box-shadow: 0 19px 38px rgba(50, 50, 50, 0.30), 0 15px 12px rgba(50, 50, 50, 0.22);
       }
 

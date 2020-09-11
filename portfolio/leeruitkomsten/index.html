@@ -22,12 +22,19 @@
     <link rel="stylesheet" href="../src/css/main.min.css" />
     <!-- Icon Font -->
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.8.2/css/pro.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="../src/img/favicon/favicon.svg" type="image/x-icon">
     <link rel="icon" href="../src/img/favicon/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
+    <!-- Cursor -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+    <!-- /Cursor -->
+
     <!-- Nav -->
     <nav>
         <ul>
@@ -51,10 +58,10 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="sky">Leeruitkomsten</h1>
+                    <h1 class="sky" data-aos="fade-up" data-aos-duration="400">Leeruitkomsten</h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                 <div class="col-lg-4 col-sm-12 tiles interactive-media">
                     <span>Interactive Media</span>
                     <a href="interactive-media">
@@ -74,7 +81,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                 <div class="col-lg-4 col-sm-12 tiles research">
                     <span>Research</span>
                     <a href="research">
@@ -102,6 +109,13 @@
 
 <!-- JS Sources -->
 <script src="../src/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- /JS Sources -->
+
+<!-- JS -->
+<script>
+    AOS.init();
+</script>
+<!-- /JS -->
 
 </html>

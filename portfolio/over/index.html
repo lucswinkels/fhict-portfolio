@@ -22,12 +22,19 @@
     <link rel="stylesheet" href="../src/css/main.min.css" />
     <!-- Icon Font -->
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.8.2/css/pro.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="../src/img/favicon/favicon.svg" type="image/x-icon">
     <link rel="icon" href="../src/img/favicon/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
+    <!-- Cursor -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+    <!-- /Cursor -->
+
     <!-- Nav -->
     <nav>
         <ul>
@@ -51,15 +58,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <h1 class="violet">Over</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consectetur maxime, aliquid
-                        repellendus est odit magni nisi. Vel dolorum voluptate quibusdam? Fugit distinctio iusto
-                        quibusdam deleniti est quas mollitia doloribus amet obcaecati odio commodi sint, harum a ipsam
-                        quis odit minus perspiciatis sapiente minima excepturi, quisquam tempore doloremque. Esse,
-                        quasi?</p>
-                    <br>
-                    <a href="https://github.com/lucswinkels">Github</a> <a
-                        href="https://www.linkedin.com/in/luc-swinkels-42a775157/">LinkedIn</a>
+                    <h1 class="violet" data-aos="fade-up" data-aos-duration="400">Over</h1>
+                    <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Deleniti consectetur maxime, aliquid
+                            repellendus est odit magni nisi. Vel dolorum voluptate quibusdam? Fugit distinctio iusto
+                            quibusdam deleniti est quas mollitia doloribus amet obcaecati odio commodi sint, harum a
+                            ipsam
+                            quis odit minus perspiciatis sapiente minima excepturi, quisquam tempore doloremque. Esse,
+                            quasi?</p>
+                        <br><br>
+                        <a href="https://github.com/lucswinkels">Github</a>
+                        <a href="https://www.linkedin.com/in/luc-swinkels-42a775157/">LinkedIn</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,6 +81,13 @@
 
 <!-- JS Sources -->
 <script src="../src/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- /JS Sources -->
+
+<!-- JS -->
+<script>
+    AOS.init();
+</script>
+<!-- /JS -->
 
 </html>

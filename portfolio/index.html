@@ -22,12 +22,18 @@
     <link rel="stylesheet" href="src/css/main.min.css" />
     <!-- Icon Font -->
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.8.2/css/pro.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="src/img/favicon/favicon.svg" type="image/x-icon">
     <link rel="icon" href="src/img/favicon/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
+    <!-- Cursor -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+    <!-- /Cursor -->
 
     <!-- Nav -->
     <nav>
@@ -48,7 +54,7 @@
     <!-- /Nav -->
 
     <!-- Header -->
-    <header class="home">
+    <header class="home" data-aos="fade-up" data-aos-duration="400">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838.79 98.96">
             <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_1-2" data-name="Layer 1">
@@ -78,7 +84,7 @@
                 </g>
             </g>
         </svg>
-        <p>Creatieve developer</p>
+        <!--<p>Creatieve developer</p>-->
     </header>
     <!-- /Header -->
 
@@ -86,6 +92,13 @@
 
 <!-- JS Sources -->
 <script src="src/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- /JS Sources -->
+
+<!-- JS -->
+<script>
+    AOS.init();
+</script>
+<!-- /JS -->
 
 </html>
