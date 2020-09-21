@@ -56,11 +56,6 @@ section {
         margin-top: 70px;
       }
     }
-
-    a {
-      margin-right: 15px;
-      font-weight: bold;
-    }
   }
 
   &.leeruitkomsten {
@@ -197,7 +192,7 @@ section {
 
           @include breakpoint(mobileonly) {
             margin-right: 0;
-            width: 100%;
+            width: 90%;
             max-height: calc(70px + 20vh);
             margin-bottom: 20px;
           }
