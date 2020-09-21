@@ -14,17 +14,17 @@ header {
 
             .purple-dot {
                 fill: #6767ff;
-                animation: lower 2s ease infinite;
+                animation: lower 5s ease infinite;
             }
 
             .red-dot {
                 fill: #ff0045;
-                animation: lower 2s ease infinite;
+                animation: lower 5s ease infinite;
             }
 
             .blue-dot {
                 fill: #b1d5ff;
-                animation: raise 2s ease infinite;
+                animation: raise 5s ease infinite;
             }
 
             @keyframes raise {
@@ -66,5 +66,48 @@ header {
                 top: 57%;
             }
         }
+    }
+}
+
+.ball {
+    @include border-radius(50%);
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    animation: fade-in 1.5s ease;
+    animation-delay: .4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    @include breakpoint(mobileonly) {
+        display: none;
+    }
+}
+
+.violet-ball {
+    @include gradient(60deg, $violet);
+    bottom: -100px;
+    left: -100px;
+}
+
+.sky-ball {
+    @include gradient(60deg, $sky);
+    top: -100px;
+    left: calc(50% - 100px);
+}
+
+.flame-ball {
+    @include gradient(60deg, $flame);
+    bottom: -100px;
+    right: -100px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

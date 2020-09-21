@@ -6,6 +6,12 @@ nav {
     left: 0;
     z-index: 9999;
 
+    &.no-bg {
+        @include breakpoint(mobileonly) {
+            background: none;
+        }
+    }
+
     @include breakpoint(mobileonly) {
         padding: 20px 15px;
         width: calc(100vw - 30px);
