@@ -51,9 +51,9 @@ section {
 
 
   &.over {
-    p {
+    h1 {
       @include breakpoint(mobileonly) {
-        margin-top: 70px;
+        margin-bottom: 70px;
       }
     }
   }
@@ -74,37 +74,37 @@ section {
 
     .interactive-media {
       .tile {
-        background-image: url(../../../src/img/thumbnails/interactive-media.jpg);
+        background-image: url(../../../src/img/thumbnails/projects/interactive-media/interactive-media-project-1.jpg);
       }
     }
 
     .development {
       .tile {
-        background-image: url(../../../src/img/thumbnails/development.jpg);
+        background-image: url(../../../src/img/thumbnails/projects/development/development-project-1.jpg);
       }
     }
 
     .design {
       .tile {
-        background-image: url(../../../src/img/thumbnails/design.jpg);
+        background-image: url(../../../src/img/thumbnails/projects/design/design-project-1.jpg);
       }
     }
 
     .research {
       .tile {
-        background-image: url(../../../src/img/thumbnails/research.jpg);
+        background-image: url(../../../src/img/thumbnails/projects/research/research-project-1.jpg);
       }
     }
 
     .communication {
       .tile {
-        background-image: url(../../../src/img/thumbnails/communication.png);
+        background-image: url(../../../src/img/thumbnails/projects/communication/communication-project-1.jpg);
       }
     }
 
     .professional-identity {
       .tile {
-        background-image: url(../../../src/img/thumbnails/professional-identity.png);
+        background-image: url(../../../src/img/thumbnails/projects/professional-identity/professional-identity-project-1.jpg);
       }
     }
 
@@ -144,10 +144,11 @@ section {
       }
 
       @include breakpoint(mobileonly) {
-        max-width: 100%;
+        max-width: 90%;
         margin-left: 0;
         margin-right: 0;
         margin-top: 10px;
+        margin-bottom: 20px;
         max-height: calc(70px + 20vh);
 
         &:hover {
@@ -175,7 +176,7 @@ section {
 
         h2 {
           margin-bottom: 30px;
-          font-size: calc(25px + 2vw);
+          font-size: calc(25px + 1.5vw);
         }
 
         p {

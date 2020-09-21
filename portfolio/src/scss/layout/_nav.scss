@@ -64,11 +64,23 @@ nav {
 
                 &:focus,
                 &:hover {
-                    border-color: $primary-color;
                     color: $pure-black;
                     text-decoration: none;
                 }
 
+
+                &.primary {
+                    &:hover {
+                        border-color: $primary-color;
+                    }
+                }
+
+
+                &.tertiary {
+                    &:hover {
+                        border-color: $tertiary-color;
+                    }
+                }
             }
         }
     }
