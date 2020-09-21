@@ -23,6 +23,14 @@ html {
 
 body {
     overflow-x: hidden;
+
+    &.no-scroll {
+        overflow-y: hidden;
+
+        @include breakpoint(mobileonly) {
+            overflow-y: visible;
+        }
+    }
 }
 
 // Scrollbar

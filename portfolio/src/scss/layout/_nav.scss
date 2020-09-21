@@ -42,6 +42,10 @@ nav {
                 font-size: 15px;
                 @include transition(all 0.3s ease);
 
+                &:not(.logo) {
+                    border-bottom: 2px solid transparent;
+                }
+
                 @include breakpoint(mobileonly) {
                     &:not(.logo) {
                         margin-right: 15px;
@@ -54,6 +58,7 @@ nav {
 
                 &:focus,
                 &:hover {
+                    border-color: $primary-color;
                     color: $pure-black;
                     text-decoration: none;
                 }
