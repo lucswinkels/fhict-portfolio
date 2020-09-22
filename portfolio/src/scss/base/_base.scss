@@ -25,10 +25,14 @@ body {
     overflow-x: hidden;
 
     &.no-scroll {
+        overflow: hidden;
+    }
+
+    &.no-scroll-pc {
         overflow-y: hidden;
 
         @include breakpoint(mobileonly) {
-            overflow-y: visible;
+            overflow-y: scroll;
         }
     }
 }

@@ -48,4 +48,5 @@
 
 .btn--int {
     @include gradient(60deg, $int);
+    color: black;
 }

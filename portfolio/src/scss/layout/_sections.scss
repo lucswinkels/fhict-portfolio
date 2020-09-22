@@ -74,9 +74,22 @@ section {
 
 
   &.over {
+
     h1 {
       @include breakpoint(mobileonly) {
         margin-bottom: 70px;
+      }
+    }
+
+    img.avatar {
+      height: 70vh;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      opacity: 0.2;
+
+      @include breakpoint(mobileonly) {
+        display: none;
       }
     }
   }
@@ -169,7 +182,6 @@ section {
       &:hover {
         transform: translateY(-6px);
         box-shadow: 0 19px 38px rgba(50, 50, 50, 0.30), 0 15px 12px rgba(50, 50, 50, 0.22);
-        filter: grayscale(100%);
       }
 
       @include breakpoint(mobileonly) {
@@ -220,10 +232,6 @@ section {
           margin-right: 5vw;
           @include transition(all .4s ease);
           box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16);
-
-          &:hover {
-            filter: grayscale(100%);
-          }
 
           @include breakpoint(mobileonly) {
             margin-right: 0;
