@@ -1843,11 +1843,11 @@ a:hover, a:focus {
 }
 
 .btn--dev {
-  background: linear-gradient(60deg, #56ab2f, #a8e063);
+  background: linear-gradient(60deg, #ff7e5f, #feb47b);
 }
 
 .btn--pro {
-  background: linear-gradient(60deg, #F5F7F6, #5CA0F2);
+  background: linear-gradient(60deg, #A88BEB, #F8CEEC);
 }
 
 .btn--des {
@@ -1859,11 +1859,11 @@ a:hover, a:focus {
 }
 
 .btn--res {
-  background: linear-gradient(60deg, #FFDD00, #FBB034);
+  background: linear-gradient(60deg, #56ab2f, #a8e063);
 }
 
 .btn--int {
-  background: linear-gradient(60deg, #ff7e5f, #feb47b);
+  background: linear-gradient(60deg, #FFDD00, #FBB034);
 }
 
 .cursor-dot,
@@ -2266,7 +2266,7 @@ section h1.sky::before {
 }
 
 section h1.title-dev::before {
-  background: linear-gradient(60deg, #56ab2f, #a8e063);
+  background: linear-gradient(60deg, #ff7e5f, #feb47b);
 }
 
 section h1.title-des::before {
@@ -2274,15 +2274,15 @@ section h1.title-des::before {
 }
 
 section h1.title-res::before {
-  background: linear-gradient(60deg, #FFDD00, #FBB034);
+  background: linear-gradient(60deg, #56ab2f, #a8e063);
 }
 
 section h1.title-int::before {
-  background: linear-gradient(60deg, #ff7e5f, #feb47b);
+  background: linear-gradient(60deg, #FFDD00, #FBB034);
 }
 
 section h1.title-pro::before {
-  background: linear-gradient(60deg, #F5F7F6, #5CA0F2);
+  background: linear-gradient(60deg, #A88BEB, #F8CEEC);
 }
 
 section h1.title-com::before {
@@ -2333,27 +2333,27 @@ section.leeruitkomsten .tiles {
 }
 
 section.leeruitkomsten .interactive-media .tile {
-  background-image: url(../../../src/img/thumbnails/projects/interactive-media/interactive-media-project-1.jpg);
+  background: linear-gradient(60deg, #FFDD00, #FBB034);
 }
 
 section.leeruitkomsten .development .tile {
-  background-image: url(../../../src/img/thumbnails/projects/development/development-project-1.jpg);
+  background: linear-gradient(60deg, #ff7e5f, #feb47b);
 }
 
 section.leeruitkomsten .design .tile {
-  background-image: url(../../../src/img/thumbnails/projects/design/design-project-1.jpg);
+  background: linear-gradient(60deg, #FE0944, #FEAE96);
 }
 
 section.leeruitkomsten .research .tile {
-  background-image: url(../../../src/img/thumbnails/projects/research/research-project-1.jpg);
+  background: linear-gradient(60deg, #56ab2f, #a8e063);
 }
 
 section.leeruitkomsten .communication .tile {
-  background-image: url(../../../src/img/thumbnails/projects/communication/communication-project-1.jpg);
+  background: linear-gradient(60deg, #83EAF1, #63A4FF);
 }
 
 section.leeruitkomsten .professional-identity .tile {
-  background-image: url(../../../src/img/thumbnails/projects/professional-identity/professional-identity-project-1.jpg);
+  background: linear-gradient(60deg, #A88BEB, #F8CEEC);
 }
 
 section.leeruitkomsten .col-lg-4 {
