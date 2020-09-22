@@ -35,6 +35,30 @@ section {
       @include gradient(60deg, $sky);
     }
 
+    &.title-dev::before {
+      @include gradient(60deg, $dev);
+    }
+
+    &.title-des::before {
+      @include gradient(60deg, $des);
+    }
+
+    &.title-res::before {
+      @include gradient(60deg, $res);
+    }
+
+    &.title-int::before {
+      @include gradient(60deg, $int);
+    }
+
+    &.title-pro::before {
+      @include gradient(60deg, $pro);
+    }
+
+    &.title-com::before {
+      @include gradient(60deg, $com);
+    }
+
     @keyframes circle-dash {
       100% {
         opacity: 1;

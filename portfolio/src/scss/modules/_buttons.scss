@@ -25,3 +25,27 @@
 .btn--red {
     @include gradient(60deg, $flame);
 }
+
+.btn--dev {
+    @include gradient(60deg, $dev);
+}
+
+.btn--pro {
+    @include gradient(60deg, $pro);
+}
+
+.btn--des {
+    @include gradient(60deg, $des);
+}
+
+.btn--com {
+    @include gradient(60deg, $com);
+}
+
+.btn--res {
+    @include gradient(60deg, $res);
+}
+
+.btn--int {
+    @include gradient(60deg, $int);
+}
