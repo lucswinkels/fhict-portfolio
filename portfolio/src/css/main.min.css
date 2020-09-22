@@ -1972,6 +1972,53 @@ a:hover, a:focus {
   transition: all 200ms linear;
 }
 
+.flexslider {
+  border: none !important;
+  -webkit-box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16) !important;
+          box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16) !important;
+  border-radius: 15px !important;
+}
+
+@media (max-width: 37.5em) {
+  .flexslider {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    position: relative;
+    width: 99%;
+    top: 20px;
+  }
+}
+
+.flex-direction-nav a {
+  text-shadow: none !important;
+  color: white !important;
+}
+
+.flex-control-paging li a {
+  background: rgba(0, 0, 0, 0.1) !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.flex-control-paging li a:hover {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.flex-control-paging li a.flex-active {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.flex-control-nav {
+  text-align: left !important;
+}
+
+.flex-control-nav li {
+  margin-left: 0 !important;
+  margin-right: 12px !important;
+}
+
 header.home {
   height: 100vh;
   width: 100vw;
@@ -2305,8 +2352,7 @@ section h1.title-com::before {
   }
 }
 
-section p,
-section a {
+section p {
   line-height: 25px;
   font-size: 15px;
 }
@@ -2468,5 +2514,47 @@ section.project-listing .project-group .project-image img:hover {
     max-height: calc(70px + 20vh);
     margin-bottom: 20px;
   }
+}
+
+section.project a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-position-y: -0%;
+  background-size: 2px;
+  background-size: auto 180%;
+}
+
+section.project a:hover {
+  background-position-y: 100%;
+}
+
+section.project a.link--dev {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F1F1F1), color-stop(50%, #feb47b));
+  background-image: linear-gradient(#F1F1F1 50%, #feb47b 50%);
+}
+
+section.project a.link--des {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F1F1F1), color-stop(50%, #FE0944));
+  background-image: linear-gradient(#F1F1F1 50%, #FE0944 50%);
+}
+
+section.project a.link--res {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F1F1F1), color-stop(50%, #56ab2f));
+  background-image: linear-gradient(#F1F1F1 50%, #56ab2f 50%);
+}
+
+section.project a.link--int {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F1F1F1), color-stop(50%, #FBB034));
+  background-image: linear-gradient(#F1F1F1 50%, #FBB034 50%);
+}
+
+section.project a.link--com {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F1F1F1), color-stop(50%, #63A4FF));
+  background-image: linear-gradient(#F1F1F1 50%, #63A4FF 50%);
+}
+
+section.project a.link--pro {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F1F1F1), color-stop(50%, #A88BEB));
+  background-image: linear-gradient(#F1F1F1 50%, #A88BEB 50%);
 }
 /*# sourceMappingURL=main.min.css.map */

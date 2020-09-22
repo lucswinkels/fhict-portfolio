@@ -67,8 +67,7 @@ section {
     }
   }
 
-  p,
-  a {
+  p {
     line-height: 25px;
     font-size: 15px;
   }
@@ -238,4 +237,40 @@ section {
 
   }
 
+  &.project {
+    a {
+      @include transition(all .3s ease);
+      background-position-y: -0%;
+      background-size: 2px;
+      background-size: auto 180%;
+
+      &:hover {
+        background-position-y: 100%;
+      }
+
+      &.link--dev {
+        background-image: linear-gradient($body-bg 50%, #feb47b 50%);
+      }
+
+      &.link--des {
+        background-image: linear-gradient($body-bg 50%, #FE0944 50%);
+      }
+
+      &.link--res {
+        background-image: linear-gradient($body-bg 50%, #56ab2f 50%);
+      }
+
+      &.link--int {
+        background-image: linear-gradient($body-bg 50%, #FBB034 50%);
+      }
+
+      &.link--com {
+        background-image: linear-gradient($body-bg 50%, #63A4FF 50%);
+      }
+
+      &.link--pro {
+        background-image: linear-gradient($body-bg 50%, #A88BEB 50%);
+      }
+    }
+  }
 }

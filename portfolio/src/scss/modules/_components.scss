@@ -98,3 +98,45 @@
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
+
+// Slider
+.flexslider {
+    border: none !important;
+    box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16) !important;
+    border-radius: 15px !important;
+
+    @include breakpoint(mobileonly) {
+        box-shadow: none !important;
+        position: relative;
+        width: 99%;
+        top: 20px;
+    }
+}
+
+.flex-direction-nav a {
+    text-shadow: none !important;
+    color: white !important;
+}
+
+.flex-control-paging li a {
+    background: rgba(0, 0, 0, 0.1) !important;
+    box-shadow: none !important;
+    @include transition(all .3s ease);
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.6) !important;
+    }
+
+    &.flex-active {
+        background: rgba(0, 0, 0, 0.9) !important;
+    }
+}
+
+.flex-control-nav {
+    text-align: left !important;
+
+    li {
+        margin-left: 0 !important;
+        margin-right: 12px !important;
+    }
+}

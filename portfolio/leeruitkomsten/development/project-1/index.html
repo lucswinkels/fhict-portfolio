@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="../../../src/css/main.min.css" />
     <!-- Icon Font -->
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.8.2/css/pro.min.css" />
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider-min.css" />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
@@ -30,6 +32,16 @@
 </head>
 
 <body>
+    <!-- Scroll Indicator -->
+    <a>
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+    </a>
+    <!-- /Scroll Indicator -->
+
     <!-- Cursor -->
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
@@ -57,8 +69,49 @@
     <section class="project" id="project">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-lg-10">
                     <h1 class="title-dev" data-aos="fade-up" data-aos-duration="400">Rock Paper Scissors</h1>
+                    <div class="flexslider" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                        <ul class="slides">
+                            <li class="slide-1">
+                                <div class="slide-image">
+                                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-2.jpg">
+                                </div>
+                            </li>
+                            <li class="slide-2">
+                                <div class="slide-image">
+                                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-2.jpg">
+                                </div>
+                            </li>
+                            <li class="slide-3">
+                                <div class="slide-image">
+                                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-2.jpg">
+                                </div>
+                            </li>
+                            <li class="slide-4">
+                                <div class="slide-image">
+                                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-2.jpg">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="400">
+                    <br>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="#"
+                            class="link--dev">Suscipit</a> expedita
+                        deleniti omnis
+                        minima exercitationem tempora eum dolore iste, reprehenderit incidunt provident ipsum, beatae,
+                        tenetur recusandae. Earum, in rerum odit vel repudiandae distinctio explicabo eligendi fugit
+                        nobis ipsam neque deserunt aliquid molestias voluptas laborum, quidem ducimus minus facilis
+                        doloremque. Beatae, quam.
+                    </p>
+                    <br><br>
+                    <a href="https://github.com/lucswinkels/fhict/tree/master/poc/rps" class="btn btn--dev">Github
+                        Repo</a>
                 </div>
             </div>
         </div>
@@ -70,6 +123,7 @@
 <!-- JS Sources -->
 <script src="../../../src/js/main.js"></script>
 <script src="../../../src/js/jquery-3.2.1.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/flexslider.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- /JS Sources -->
 
@@ -126,5 +180,20 @@
     })(jQuery);
 </script>
 <!-- /Scroll Indicator -->
+
+<!-- FlexSlider -->
+<script>
+    $(".flexslider").flexslider({
+        animation: "slide",
+        slideshow: true,
+        touch: true,
+        keyboard: true,
+        pauseOnHover: true,
+        after: function (item) {
+            console.log(item);
+        }
+    });
+</script>
+<!-- /FlexSlider -->
 
 </html>
