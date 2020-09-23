@@ -35,27 +35,27 @@ section {
       @include gradient(60deg, $sky);
     }
 
-    &.title-dev::before {
+    &.title--dev::before {
       @include gradient(60deg, $dev);
     }
 
-    &.title-des::before {
+    &.title--des::before {
       @include gradient(60deg, $des);
     }
 
-    &.title-res::before {
+    &.title--res::before {
       @include gradient(60deg, $res);
     }
 
-    &.title-int::before {
+    &.title--int::before {
       @include gradient(60deg, $int);
     }
 
-    &.title-pro::before {
+    &.title--pro::before {
       @include gradient(60deg, $pro);
     }
 
-    &.title-com::before {
+    &.title--com::before {
       @include gradient(60deg, $com);
     }
 
@@ -184,7 +184,7 @@ section {
 
       i {
         color: rgba(255, 255, 255, 0.3);
-        font-size: calc(30px + 2vw);
+        font-size: calc(30px + 2.5vw);
         @include transition(all .3s ease);
       }
 
@@ -194,6 +194,7 @@ section {
 
         i {
           transform: scale(1.2);
+          color: rgba(255, 255, 255, 0.5);
         }
       }
 
@@ -291,6 +292,29 @@ section {
 
       &.link--pro {
         background-image: linear-gradient($body-bg 50%, #A88BEB 50%);
+      }
+    }
+
+    .right-col {
+      float: right;
+      font-weight: bold;
+
+      @include breakpoint(mobileonly) {
+        float: left;
+        margin-top: 20px;
+      }
+
+      i {
+        margin-right: 5px;
+        width: 25px;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+
+    .right-col--dev {
+      i {
+        color: #ff7e5f;
       }
     }
   }

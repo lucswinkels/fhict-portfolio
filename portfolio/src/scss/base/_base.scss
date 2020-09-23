@@ -35,6 +35,10 @@ body {
             overflow-y: scroll;
         }
     }
+
+    &.scroll {
+        overflow-y: scroll;
+    }
 }
 
 // Scrollbar

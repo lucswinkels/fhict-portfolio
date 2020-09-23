@@ -104,6 +104,7 @@
     border: none !important;
     box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16) !important;
     border-radius: 15px !important;
+    top: 30px;
 
     @include breakpoint(mobileonly) {
         box-shadow: none !important;
@@ -133,10 +134,10 @@
 }
 
 .flex-control-nav {
-    text-align: left !important;
+    /*text-align: left !important;
 
     li {
         margin-left: 0 !important;
         margin-right: 12px !important;
-    }
+    }*/
 }

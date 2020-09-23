@@ -169,6 +169,10 @@ body.no-scroll-pc {
   }
 }
 
+body.scroll {
+  overflow-y: scroll;
+}
+
 body::-webkit-scrollbar {
   width: 11px;
   height: 18px;
@@ -1982,6 +1986,7 @@ a:hover, a:focus {
   -webkit-box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16) !important;
           box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16) !important;
   border-radius: 15px !important;
+  top: 30px;
 }
 
 @media (max-width: 37.5em) {
@@ -2016,12 +2021,12 @@ a:hover, a:focus {
 }
 
 .flex-control-nav {
-  text-align: left !important;
-}
+  /*text-align: left !important;
 
-.flex-control-nav li {
-  margin-left: 0 !important;
-  margin-right: 12px !important;
+    li {
+        margin-left: 0 !important;
+        margin-right: 12px !important;
+    }*/
 }
 
 header.home {
@@ -2317,27 +2322,27 @@ section h1.sky::before {
   background: linear-gradient(60deg, #4d9df9, #c2deff);
 }
 
-section h1.title-dev::before {
+section h1.title--dev::before {
   background: linear-gradient(60deg, #ff7e5f, #feb47b);
 }
 
-section h1.title-des::before {
+section h1.title--des::before {
   background: linear-gradient(60deg, #FE0944, #FEAE96);
 }
 
-section h1.title-res::before {
+section h1.title--res::before {
   background: linear-gradient(60deg, #56ab2f, #a8e063);
 }
 
-section h1.title-int::before {
+section h1.title--int::before {
   background: linear-gradient(60deg, #FFDD00, #FBB034);
 }
 
-section h1.title-pro::before {
+section h1.title--pro::before {
   background: linear-gradient(60deg, #A88BEB, #F8CEEC);
 }
 
-section h1.title-com::before {
+section h1.title--com::before {
   background: linear-gradient(60deg, #83EAF1, #63A4FF);
 }
 
@@ -2465,7 +2470,7 @@ section.leeruitkomsten .tile {
 
 section.leeruitkomsten .tile i {
   color: rgba(255, 255, 255, 0.3);
-  font-size: calc(30px + 2vw);
+  font-size: calc(30px + 2.5vw);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -2480,6 +2485,7 @@ section.leeruitkomsten .tile:hover {
 section.leeruitkomsten .tile:hover i {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 37.5em) {
@@ -2586,5 +2592,28 @@ section.project a.link--com {
 section.project a.link--pro {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F1F1F1), color-stop(50%, #A88BEB));
   background-image: linear-gradient(#F1F1F1 50%, #A88BEB 50%);
+}
+
+section.project .right-col {
+  float: right;
+  font-weight: bold;
+}
+
+@media (max-width: 37.5em) {
+  section.project .right-col {
+    float: left;
+    margin-top: 20px;
+  }
+}
+
+section.project .right-col i {
+  margin-right: 5px;
+  width: 25px;
+  font-size: 18px;
+  text-align: center;
+}
+
+section.project .right-col--dev i {
+  color: #ff7e5f;
 }
 /*# sourceMappingURL=main.min.css.map */
