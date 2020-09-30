@@ -2483,9 +2483,7 @@ section.leeruitkomsten .tile:hover {
 }
 
 section.leeruitkomsten .tile:hover i {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media (max-width: 37.5em) {
@@ -2594,26 +2592,15 @@ section.project a.link--pro {
   background-image: linear-gradient(#F1F1F1 50%, #A88BEB 50%);
 }
 
-section.project .right-col {
-  float: right;
+section.project p.project-details {
   font-weight: bold;
 }
 
-@media (max-width: 37.5em) {
-  section.project .right-col {
-    float: left;
-    margin-top: 20px;
-  }
-}
-
-section.project .right-col i {
+section.project p.project-details i {
   margin-right: 5px;
-  width: 25px;
   font-size: 18px;
   text-align: center;
-}
-
-section.project .right-col--dev i {
   color: #ff7e5f;
+  width: 25px;
 }
 /*# sourceMappingURL=main.min.css.map */
