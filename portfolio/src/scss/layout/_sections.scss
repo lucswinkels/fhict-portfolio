@@ -264,6 +264,10 @@ section {
       margin-top: 10px;
     }
 
+    p span {
+      font-weight: bold;
+    }
+
     img {
       width: 100%;
       @include border-radius(15px);
