@@ -253,6 +253,28 @@ section {
   }
 
   &.project {
+    .project-section {
+      margin-top: 40px;
+      margin-bottom: calc(50px + 5vh);
+    }
+
+    h3 {
+      font-size: calc(30px + 1vw);
+      margin-bottom: 15px;
+      margin-top: 10px;
+    }
+
+    img {
+      width: 100%;
+      @include border-radius(15px);
+      box-shadow: 0 19px 38px rgba(100, 100, 100, 0.22), 0 15px 12px rgba(100, 100, 100, 0.16);
+
+      @include breakpoint(mobileonly) {
+        margin-bottom: 20px;
+        width: 90%;
+      }
+    }
+
     a {
       @include transition(all .3s ease);
       background-position-y: -0%;
@@ -295,8 +317,43 @@ section {
         margin-right: 5px;
         font-size: 18px;
         text-align: center;
-        color: #ff7e5f;
         width: 25px;
+      }
+    }
+
+    p.project--dev {
+      i {
+        color: #ff7e5f;
+      }
+    }
+
+    p.project--des {
+      i {
+        color: #FE0944;
+      }
+    }
+
+    p.project--res {
+      i {
+        color: #56ab2f;
+      }
+    }
+
+    p.project--int {
+      i {
+        color: #FBB034;
+      }
+    }
+
+    p.project--com {
+      i {
+        color: #63A4FF;
+      }
+    }
+
+    p.project--pro {
+      i {
+        color: #A88BEB;
       }
     }
   }

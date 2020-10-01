@@ -16,19 +16,20 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lucswinkels.com/" />
     <meta property="article:section" content="other" />
-    <meta property="og:image" content="../../../src/img/favicon/favicon.svg" />
+    <meta property="og:image" content="../../../src/img/favicon/favicon--dev.svg" />
     <link rel="canonical" href="https://lucswinkels.com/" />
     <!-- Main CSS File-->
     <link rel="stylesheet" href="../../../src/css/main.min.css" />
     <!-- Icon Font -->
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.8.2/css/pro.min.css" />
-    <!-- Slider CSS -->
+    <!-- Slider CSS 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider-min.css" />
+    -->
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../../../src/img/favicon/favicon.svg" type="image/x-icon">
-    <link rel="icon" href="../../../src/img/favicon/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../src/img/favicon/favicon--dev.svg" type="image/x-icon">
+    <link rel="icon" href="../../../src/img/favicon/favicon--dev.svg" type="image/x-icon">
 </head>
 
 <body class="scroll">
@@ -75,53 +76,96 @@
             </div>
             <div class="row">
                 <div class="col-lg-7" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-                    <p class="project-details">
-                        Development <i class="fal fa-code"></i><br>
-                        23-9-2020 <i class="fal fa-calendar-week"></i><br>
-                        Individueel <i class="fal fa-user"></i><br>
+                    <p class="project-details project--dev">
+                        <i class="fal fa-code"></i>Development<br>
+                        <i class="fal fa-calendar-week"></i>14/9/2020 — 15/9/2020<br>
+                        <i class="fal fa-user"></i>Individueel<br>
                     </p>
                     <p><br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="#"
-                            class="link--dev">Suscipit</a> expedita
-                        deleniti omnis
-                        minima exercitationem tempora eum dolore iste, reprehenderit incidunt provident ipsum, beatae,
-                        tenetur recusandae. Earum, in rerum odit vel repudiandae distinctio explicabo eligendi fugit
-                        nobis ipsam neque deserunt aliquid molestias voluptas laborum, quidem ducimus minus facilis
-                        doloremque. Beatae, quam.
+                        Dit was de eerste POC die ik had gemaakt na het bekijken van een aantal basis JavaScript videos
+                        en mini-cursussen van w3schools. De POC is een steen-papier-schaar spel waarin animaties worden
+                        gebruikt. Dit project heb ik met behulp van een <a
+                            href="https://www.youtube.com/watch?v=qWPtKtYEsN4" class="link--dev">videotutorial</a>
+                        gemaakt.
+                        Omdat ik wel mijn eigen draai wilde geven aan de tutorial heb ik een score reset functie
+                        toegevoegd en de stijl aangepast van het project.
                     </p>
                     <br>
-                    <p><a href="#" class="link--dev">Github</a> </p>
+                    <p><a href="https://github.com/lucswinkels/fhict/tree/master/poc/rps" class="link--dev">Github
+                        </a>
+                    </p>
                 </div>
             </div>
-            <br>
+            <div class="row project-section" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="col-lg-8">
+                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-1.jpg">
+                </div>
+                <div class="col">
+                    <h3>Structuur</h3>
+                    <p>Als eerst heb ik de HTML structuur aangemaakt. Zonder dit is er geen CSS en JavaScript om toe te
+                        passen. Hier had ik al ervaring mee dus was deze vrij logisch en snapte ik gelijk de keuzes die
+                        de tutorial had gemaakt. Deze HTML objecten worden d.m.v. hun class aangeroepen in de
+                        JavaScript.</p>
+                </div>
+            </div>
+            <div class="row project-section" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="col-lg-8">
+                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-2.jpg">
+                </div>
+                <div class="col">
+                    <h3>Opmaak</h3>
+                    <p>Ik had al flink wat verstand van HTML & CSS dus de lay-out volgen was voor mij geen grote
+                        uitdaging. Echter heb ik wel meer geleerd over CSS animaties door keyframes aan te maken en deze
+                        binnen een bepaald object aan te roepen om dit te animeren. Er werd voornamelijk gebruikt van de
+                        transform functie om de animaties te realiseren.</p>
+                </div>
+            </div>
+            <div class="row project-section" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="col-lg-8">
+                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-3.jpg">
+                </div>
+                <div class="col">
+                    <h3>Functies</h3>
+                    <p>Dit is natuurlijk het belangrijkste deel van de POC, de functionaliteiten die het programma
+                        heeft. In dit onderdeel heb ik ook het meest geleerd omdat voor mij het moeilijkste deel van dit
+                        project de JavaScript was. Omdat ik een tutorial heb gevolgd was dit vrij vanzelfsprekend, maar
+                        de tutorial was erg duidelijk en legt ook goed uit waarom je bepaalde functies gebruikt en wat
+                        deze functies doen. Ik heb hier bijvoorbeeld veel geleerd over variabelen aanmaken en deze aan
+                        te roepen om ze zo te veranderen.</p>
+                    <br>
+                    <p>Voor de volledige sourcecode heb ik boven in de pagina een link staan naar de Github repository
+                        en de videotutorial.</p>
+                </div>
+            </div>
+            <!-- Slider structure for future
             <div class="row">
                 <div class="col">
                     <div class="flexslider" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                         <ul class="slides">
                             <li class="slide-1">
                                 <div class="slide-image">
-                                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-2.jpg">
+                                    <img src="">
                                 </div>
                             </li>
                             <li class="slide-2">
                                 <div class="slide-image">
-                                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-2.jpg">
+                                    <img src="">
                                 </div>
                             </li>
                             <li class="slide-3">
                                 <div class="slide-image">
-                                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-2.jpg">
+                                    <img src="">
                                 </div>
                             </li>
                             <li class="slide-4">
                                 <div class="slide-image">
-                                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-2.jpg">
+                                    <img src="">
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- /Content -->
@@ -131,7 +175,7 @@
 <!-- JS Sources -->
 <script src="../../../src/js/main.js"></script>
 <script src="../../../src/js/jquery-3.2.1.min.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/flexslider.js"></script>
+<!--<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/flexslider.js"></script>-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- /JS Sources -->
 
@@ -189,7 +233,7 @@
 </script>
 <!-- /Scroll Indicator -->
 
-<!-- FlexSlider -->
+<!-- FlexSlider
 <script>
     $(".flexslider").flexslider({
         animation: "slide",
