@@ -1,3 +1,6 @@
+// Initialize AOS Library
+AOS.init();
+
 // Cursor Effect
 function isIE() {
     ua = navigator.userAgent;

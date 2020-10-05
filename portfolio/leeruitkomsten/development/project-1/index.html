@@ -14,22 +14,21 @@
     <meta name="robots" content="noodp" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lucswinkels.com/" />
     <meta property="article:section" content="other" />
     <meta property="og:image" content="../../../src/img/favicon/favicon--dev.svg" />
-    <link rel="canonical" href="https://lucswinkels.com/" />
     <!-- Main CSS File-->
     <link rel="stylesheet" href="../../../src/css/main.min.css" />
     <!-- Icon Font -->
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.8.2/css/pro.min.css" />
-    <!-- Slider CSS 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider-min.css" />
-    -->
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../../src/img/favicon/favicon--dev.svg" type="image/x-icon">
     <link rel="icon" href="../../../src/img/favicon/favicon--dev.svg" type="image/x-icon">
+    <!-- JS Sources -->
+    <script src="../../../src/js/jquery-3.2.1.min.js"></script>
+    <script src="../../../src/js/aos-2.3.1.min.js"></script>
+    <script src="../../../src/js/scrollindicator.js"></script>
 </head>
 
 <body class="scroll">
@@ -139,115 +138,13 @@
                         en de videotutorial.</p>
                 </div>
             </div>
-            <!-- Slider structure for future
-            <div class="row">
-                <div class="col">
-                    <div class="flexslider" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-                        <ul class="slides">
-                            <li class="slide-1">
-                                <div class="slide-image">
-                                    <img src="">
-                                </div>
-                            </li>
-                            <li class="slide-2">
-                                <div class="slide-image">
-                                    <img src="">
-                                </div>
-                            </li>
-                            <li class="slide-3">
-                                <div class="slide-image">
-                                    <img src="">
-                                </div>
-                            </li>
-                            <li class="slide-4">
-                                <div class="slide-image">
-                                    <img src="">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
     <!-- /Content -->
 
+    <!-- Scripts -->
+    <script src="../../../src/js/main.js"></script>
+    <!-- /Scripts -->
 </body>
-
-<!-- JS Sources -->
-<script src="../../../src/js/main.js"></script>
-<script src="../../../src/js/jquery-3.2.1.min.js"></script>
-<!--<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/flexslider.js"></script>-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- /JS Sources -->
-
-<!-- Animate On Scroll init -->
-<script>
-    AOS.init();
-</script>
-<!-- /Animate On Scroll init -->
-
-<!-- Scroll Indicator -->
-<script>
-    (function ($) {
-        "use strict";
-        $(document).ready(function () {
-            "use strict";
-
-            //Scroll back to top
-            var progressPath = document.querySelector(".progress-wrap path");
-            var pathLength = progressPath.getTotalLength();
-            progressPath.style.transition = progressPath.style.WebkitTransition =
-                "none";
-            progressPath.style.strokeDasharray = pathLength + " " + pathLength;
-            progressPath.style.strokeDashoffset = pathLength;
-            progressPath.getBoundingClientRect();
-            progressPath.style.transition = progressPath.style.WebkitTransition =
-                "stroke-dashoffset 10ms linear";
-            var updateProgress = function () {
-                var scroll = $(window).scrollTop();
-                var height = $(document).height() - $(window).height();
-                var progress = pathLength - (scroll * pathLength) / height;
-                progressPath.style.strokeDashoffset = progress;
-            };
-            updateProgress();
-            $(window).scroll(updateProgress);
-            var offset = 50;
-            var duration = 550;
-            jQuery(window).on("scroll", function () {
-                if (jQuery(this).scrollTop() > offset) {
-                    jQuery(".progress-wrap").addClass("active-progress");
-                } else {
-                    jQuery(".progress-wrap").removeClass("active-progress");
-                }
-            });
-            jQuery(".progress-wrap").on("click", function (event) {
-                event.preventDefault();
-                jQuery("html, body").animate({
-                        scrollTop: 0
-                    },
-                    duration
-                );
-                return false;
-            });
-        });
-    })(jQuery);
-</script>
-<!-- /Scroll Indicator -->
-
-<!-- FlexSlider
-<script>
-    $(".flexslider").flexslider({
-        animation: "slide",
-        slideshow: true,
-        touch: true,
-        keyboard: true,
-        pauseOnHover: true,
-        after: function (item) {
-            console.log(item);
-        }
-    });
-</script>
-<!-- /FlexSlider -->
 
 </html>

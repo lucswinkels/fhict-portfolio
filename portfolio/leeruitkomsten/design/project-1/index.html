@@ -14,10 +14,8 @@
     <meta name="robots" content="noodp" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lucswinkels.com/" />
     <meta property="article:section" content="other" />
     <meta property="og:image" content="../../../src/img/favicon/favicon--des.svg" />
-    <link rel="canonical" href="https://lucswinkels.com/" />
     <!-- Main CSS File-->
     <link rel="stylesheet" href="../../../src/css/main.min.css" />
     <!-- Icon Font -->
@@ -27,6 +25,10 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../../src/img/favicon/favicon--des.svg" type="image/x-icon">
     <link rel="icon" href="../../../src/img/favicon/favicon--des.svg" type="image/x-icon">
+    <!-- JS Sources -->
+    <script src="../../../src/js/jquery-3.2.1.min.js"></script>
+    <script src="../../../src/js/aos-2.3.1.min.js"></script>
+    <script src="../../../src/js/scrollindicator.js"></script>
 </head>
 
 <body class="scroll">
@@ -78,74 +80,32 @@
                         <i class="fal fa-users"></i>Groep<br>
                     </p>
                     <p><br>
-                        Hier komt z.s.m. een uitgebreide omschrijving van dit project.
+                        Voor ons groepsproject, het maken van een AR bril, was een van de eerste deelproducten die we
+                        voor sprint 0 moesten opleveren een mediaverkenning. Hier wordt duidelijk gemaakt welke research
+                        we hebben gedaan en welke conclusies we hebben kunnen trekken. Ik was binnen de groep
+                        verantwoordelijk voor de grote lijnen van dit document. Ik heb
                     </p>
+                </div>
+            </div>
+            <div class="row project-section" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="col-lg-8">
+                    <img src="../../../src/img/thumbnails/projects/development/rps/rps-1.jpg">
+                </div>
+                <div class="col">
+                    <h3>Structuur</h3>
+                    <p>Als eerst heb ik de HTML structuur aangemaakt. Zonder dit is er geen CSS en JavaScript om toe te
+                        passen. Hier had ik al ervaring mee dus was deze vrij logisch en snapte ik gelijk de keuzes die
+                        de tutorial had gemaakt. Deze HTML objecten worden d.m.v. hun class aangeroepen in de
+                        JavaScript.</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- /Content -->
 
+    <!-- Scripts -->
+    <script src="../../../src/js/main.js"></script>
+    <!-- /Scripts -->
 </body>
-
-<!-- JS Sources -->
-<script src="../../../src/js/main.js"></script>
-<script src="../../../src/js/jquery-3.2.1.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- /JS Sources -->
-
-<!-- Animate On Scroll init -->
-<script>
-    AOS.init();
-</script>
-<!-- /Animate On Scroll init -->
-
-<!-- Scroll Indicator -->
-<script>
-    (function ($) {
-        "use strict";
-        $(document).ready(function () {
-            "use strict";
-
-            //Scroll back to top
-            var progressPath = document.querySelector(".progress-wrap path");
-            var pathLength = progressPath.getTotalLength();
-            progressPath.style.transition = progressPath.style.WebkitTransition =
-                "none";
-            progressPath.style.strokeDasharray = pathLength + " " + pathLength;
-            progressPath.style.strokeDashoffset = pathLength;
-            progressPath.getBoundingClientRect();
-            progressPath.style.transition = progressPath.style.WebkitTransition =
-                "stroke-dashoffset 10ms linear";
-            var updateProgress = function () {
-                var scroll = $(window).scrollTop();
-                var height = $(document).height() - $(window).height();
-                var progress = pathLength - (scroll * pathLength) / height;
-                progressPath.style.strokeDashoffset = progress;
-            };
-            updateProgress();
-            $(window).scroll(updateProgress);
-            var offset = 50;
-            var duration = 550;
-            jQuery(window).on("scroll", function () {
-                if (jQuery(this).scrollTop() > offset) {
-                    jQuery(".progress-wrap").addClass("active-progress");
-                } else {
-                    jQuery(".progress-wrap").removeClass("active-progress");
-                }
-            });
-            jQuery(".progress-wrap").on("click", function (event) {
-                event.preventDefault();
-                jQuery("html, body").animate({
-                        scrollTop: 0
-                    },
-                    duration
-                );
-                return false;
-            });
-        });
-    })(jQuery);
-</script>
-<!-- /Scroll Indicator -->
 
 </html>
