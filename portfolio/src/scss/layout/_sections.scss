@@ -295,27 +295,27 @@ section {
       }
 
       &.link--dev {
-        background-image: linear-gradient($body-bg 50%, #feb47b 50%);
+        background-image: linear-gradient($body-bg 50%, $color--dev 50%);
       }
 
       &.link--des {
-        background-image: linear-gradient($body-bg 50%, #FE0944 50%);
+        background-image: linear-gradient($body-bg 50%, $color--des 50%);
       }
 
       &.link--res {
-        background-image: linear-gradient($body-bg 50%, #56ab2f 50%);
+        background-image: linear-gradient($body-bg 50%, $color--res 50%);
       }
 
       &.link--int {
-        background-image: linear-gradient($body-bg 50%, #FBB034 50%);
+        background-image: linear-gradient($body-bg 50%, $color--int 50%);
       }
 
       &.link--com {
-        background-image: linear-gradient($body-bg 50%, #63A4FF 50%);
+        background-image: linear-gradient($body-bg 50%, $color--com 50%);
       }
 
       &.link--pro {
-        background-image: linear-gradient($body-bg 50%, #A88BEB 50%);
+        background-image: linear-gradient($body-bg 50%, $color--pro 50%);
       }
     }
 
@@ -332,37 +332,93 @@ section {
 
     p.project--dev {
       i {
-        color: #ff7e5f;
+        color: $color--dev;
       }
     }
 
     p.project--des {
       i {
-        color: #FE0944;
+        color: $color--des;
       }
     }
 
     p.project--res {
       i {
-        color: #56ab2f;
+        color: $color--res;
       }
     }
 
     p.project--int {
       i {
-        color: #FBB034;
+        color: $color--int;
       }
     }
 
     p.project--com {
       i {
-        color: #63A4FF;
+        color: $color--com;
       }
     }
 
     p.project--pro {
       i {
-        color: #A88BEB;
+        color: $color--pro;
+      }
+    }
+
+    .next-project {
+      @extend %flexbox;
+      justify-content: center;
+
+      @include breakpoint(mobileonly) {
+        justify-content: flex-start;
+      }
+
+      span {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 7px;
+
+        &.sub--dev {
+          color: $color--dev;
+        }
+
+        &.sub--des {
+          color: $color--des;
+        }
+
+        &.sub--res {
+          color: $color--res;
+        }
+
+        &.sub--int {
+          color: $color--int;
+        }
+
+        &.sub--com {
+          color: $color--com;
+        }
+
+        &.sub--pro {
+          color: $color--pro;
+        }
+      }
+
+      a {
+        font-weight: bold;
+        font-size: calc(25px + 1.2vw);
+
+        i {
+          position: relative;
+          left: 5px;
+          @include transition(all .3s ease);
+        }
+
+        &:hover {
+          i {
+            left: 20px;
+          }
+        }
       }
     }
   }

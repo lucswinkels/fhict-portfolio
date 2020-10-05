@@ -99,39 +99,39 @@ nav {
 
     a {
         &.active--purple {
-            color: #6767ff;
+            color: $purple;
         }
 
         &.active--red {
-            color: #ff0045;
+            color: $red;
         }
 
         &.active--blue {
-            color: #b1d5ff;
+            color: $blue;
         }
 
         &.active--dev {
-            color: #ff7e5f;
+            color: $color--dev;
         }
 
         &.active--des {
-            color: #FE0944;
+            color: $color--des;
         }
 
         &.active--res {
-            color: #56ab2f;
+            color: $color--res;
         }
 
         &.active--int {
-            color: #FBB034;
+            color: $color--int;
         }
 
         &.active--com {
-            color: #63A4FF;
+            color: $color--com;
         }
 
         &.active--pro {
-            color: #A88BEB;
+            color: $color--pro;
         }
     }
 }
