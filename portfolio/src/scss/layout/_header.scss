@@ -65,6 +65,20 @@ header {
             @include breakpoint(mobileonly) {
                 top: 57%;
             }
+
+            &:hover {
+                i {
+                    left: 15px;
+                }
+            }
+
+            i {
+                font-size: 1.3em;
+                @include transition(all .3s ease);
+                position: relative;
+                top: 3px;
+                left: 5px;
+            }
         }
     }
 }

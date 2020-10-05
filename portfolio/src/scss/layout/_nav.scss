@@ -85,3 +85,53 @@ nav {
         }
     }
 }
+
+.breadcrumbs {
+    margin-bottom: 50px;
+    font-size: 13px;
+
+    span {
+        margin-left: 3px;
+        margin-right: 3px;
+        position: relative;
+        top: 1px;
+    }
+
+    a {
+        &.active--purple {
+            color: #6767ff;
+        }
+
+        &.active--red {
+            color: #ff0045;
+        }
+
+        &.active--blue {
+            color: #b1d5ff;
+        }
+
+        &.active--dev {
+            color: #ff7e5f;
+        }
+
+        &.active--des {
+            color: #FE0944;
+        }
+
+        &.active--res {
+            color: #56ab2f;
+        }
+
+        &.active--int {
+            color: #FBB034;
+        }
+
+        &.active--com {
+            color: #63A4FF;
+        }
+
+        &.active--pro {
+            color: #A88BEB;
+        }
+    }
+}

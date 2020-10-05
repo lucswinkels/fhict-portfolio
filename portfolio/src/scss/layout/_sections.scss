@@ -21,6 +21,11 @@ section {
       z-index: -1;
       animation: circle-dash 1s forwards;
       opacity: 0;
+
+      @include breakpoint(mobileonly) {
+        height: 100px;
+        width: 100px;
+      }
     }
 
     &.violet::before {
