@@ -46,6 +46,27 @@ h1 {
     transform: translateY(50px);
 }
 
+.fade-down {
+    transition: .4s;
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+.fade-left {
+    transition: .4s;
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+}
+
+.fade-right {
+    transition: .4s;
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+}
+
 .visible {
     opacity: 1;
     -webkit-transform: translateY(0px);
