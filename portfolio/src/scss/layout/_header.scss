@@ -12,6 +12,10 @@ header {
             left: 50%;
             height: 30vh;
 
+            @include breakpoint(mobileonly) {
+                max-width: 70vw;
+            }
+
             .purple-dot {
                 fill: #6767ff;
                 animation: lower 5s ease infinite;

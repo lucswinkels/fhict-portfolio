@@ -1,0 +1,53 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    text-align: center;
+}
+
+.container:nth-of-type(even) {
+    background: #efefef;
+}
+
+.intro {
+    height: 80vh;
+    background-color: #09c6f9;
+    background-image: linear-gradient(315deg, #09c6f9 0%, #045de9 74%);
+
+}
+
+.intro-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(40px + 1.2vw);
+    color: white;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(50px + 2vw);
+}
+
+/* Animation */
+.fade-up {
+    transition: .4s;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+}
+
+.visible {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
