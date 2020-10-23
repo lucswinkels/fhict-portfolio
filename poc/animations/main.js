@@ -1,5 +1,5 @@
 window.onload = function () {
-    let animations = document.querySelectorAll(".animated");
+    const animations = document.querySelectorAll(".animated");
     window.addEventListener('scroll', fadeIn);
 
     function fadeIn() {
