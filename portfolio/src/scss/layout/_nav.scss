@@ -4,18 +4,20 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
 
     &.no-bg {
         @include breakpoint(mobileonly) {
             background: none;
         }
+
+        z-index: 9999;
     }
 
     @include breakpoint(mobileonly) {
         padding: 20px 15px;
         width: calc(100vw - 30px);
         background: $body-bg;
+        z-index: 9999;
     }
 
     ul {

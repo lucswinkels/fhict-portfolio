@@ -93,3 +93,10 @@ body::-webkit-scrollbar-track {
     display: -o-flex;
     display: flex;
 }
+
+// Mobile 
+.mobile-hidden {
+    @include breakpoint(mobileonly) {
+        display: none !important;
+    }
+}

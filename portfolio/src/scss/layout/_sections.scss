@@ -269,6 +269,28 @@ section {
       margin-top: 10px;
     }
 
+    h4 {
+      font-size: calc(25px + 0.2vw);
+      margin-bottom: 12px;
+    }
+
+    .look-back {
+
+      h4,
+      p {
+        @include breakpoint(mobileonly) {
+          display: block;
+          width: 90vw
+        }
+      }
+
+      .col {
+        @include breakpoint(mobileonly) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+
     p span {
       font-weight: bold;
     }
@@ -412,11 +434,37 @@ section {
           position: relative;
           left: 5px;
           @include transition(all .3s ease);
+
+
+          &.arrow--dev {
+            color: $color--dev;
+          }
+
+          &.arrow--des {
+            color: $color--des;
+          }
+
+          &.arrow--res {
+            color: $color--res;
+          }
+
+          &.arrow--int {
+            color: $color--int;
+          }
+
+          &.arrow--com {
+            color: $color--com;
+          }
+
+          &.arrow--pro {
+            color: $color--pro;
+          }
         }
 
         &:hover {
           i {
             left: 20px;
+
           }
         }
       }
