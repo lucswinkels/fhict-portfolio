@@ -11,7 +11,29 @@
 </head>
 
 <body>
-
+    <div id="app">
+        <div class="sections-menu">
+          <span
+             class="menu-point"
+             v-bind:class="{active: activeSection == index}"
+             v-on:click="scrollToSection(index)"
+             v-for="(offset, index) in offsets"
+             v-bind:key="index">
+          </span>
+        </div>
+        <section class="fullpage blue">
+          <h1>Vue.js Fullpage Scroll</h1>
+        </section>
+        <section class="fullpage black">
+          <h1>Section 2</h1>
+        </section>
+        <section class="fullpage red">
+          <h1>Section 3</h1>
+        </section>
+        <section class="fullpage green">
+          <h1>Section 4</h1>
+        </section>
+      </div>
 </body>
 
 </html>
