@@ -4,10 +4,10 @@ document.body.appendChild(app.view);
 
 var dudeArray = [];
 
-var totaldudes = 20;
+var totaldudes = 10;
 
 for (var i = 0; i < totaldudes; i++) {
-    var dude = PIXI.Sprite.fromImage('https://pixijs.io/examples/examples/assets/flowerTop.png');
+    var dude = PIXI.Sprite.fromImage('https://i.imgur.com/858yT6u.png');
 
     dude.anchor.set(0.5);
 
@@ -41,7 +41,7 @@ var dudeBounds = new PIXI.Rectangle(
 app.ticker.add(function() {
     for (var i = 0; i < dudeArray.length; i++) {
         var dude = dudeArray[i];
-        dude.direction += dude.turningSpeed * 0.01;
+        dude.direction += dude.turningSpeed * 0.05;
         dude.x += Math.sin(dude.direction) * dude.speed;
         dude.y += Math.cos(dude.direction) * dude.speed;
         dude.rotation = -dude.direction - Math.PI / 2;
