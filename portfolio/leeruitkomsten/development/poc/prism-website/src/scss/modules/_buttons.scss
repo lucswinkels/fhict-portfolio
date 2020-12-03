@@ -1,0 +1,22 @@
+// Buttons
+.btn {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 18px 25px;
+    @include border-radius(4px);
+    display: inline-block;
+    box-shadow: 0 9px 19px rgba(0, 0, 0, 0.15), 0 7px 6px rgba(0, 0, 0, 0.11);
+    @include transition(all .3s ease);
+    position: relative;
+
+    &:hover {
+        box-shadow: 0 9px 19px rgba(0, 0, 0, 0.23), 0 7px 6px rgba(0, 0, 0, 0.16);
+        transform: translateY(-4px);
+    }
+}
+
+.btn--primary {
+    background: $primary;
+    color: $paper;
+}

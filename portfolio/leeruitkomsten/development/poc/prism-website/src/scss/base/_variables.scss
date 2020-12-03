@@ -1,0 +1,28 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Fonts
+$font-heading: Roboto,
+sans-serif;
+$font-paragraph: Roboto,
+sans-serif;
+$font-links: Roboto,
+sans-serif;
+$font-buttons: Roboto,
+sans-serif;
+$font-nav: Roboto,
+sans-serif;
+
+// Whites
+$paper: #ffffff;
+$cloud: #efefef;
+// Blacks
+$night: #333333;
+// Colors
+$sky:#3fa9f5;
+$business: #137cbc;
+$wave:#f5fafe;
+// Variables
+$body-bg: $paper;
+$primary: $sky;
+$secondary: $business;

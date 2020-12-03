@@ -1,0 +1,35 @@
+// Header
+header {
+    height: 100vh;
+    @extend %flexbox;
+    align-items: center;
+
+    .col-lg-5 {
+        @extend %flexbox;
+        justify-content: center;
+        flex-direction: column;
+
+        a {
+            max-width: 80px;
+            text-align: center;
+        }
+    }
+
+    span {
+        text-transform: uppercase;
+        color: $primary;
+        letter-spacing: 2px;
+    }
+
+    h1 {
+        margin-top: 5px;
+        font-size: calc(35px + 1.5vw);
+
+    }
+
+    p {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        max-width: 80%;
+    }
+}

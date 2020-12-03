@@ -1,0 +1,92 @@
+// FAQ
+.tabs {
+    overflow: hidden;
+
+    @include breakpoint(mobileonly) {
+        margin-top: 30px;
+    }
+
+    h3 {
+        font-size: calc(17px + 0.1vw);
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+}
+
+.tab {
+    width: 100%;
+    overflow: hidden;
+    @include transition(all .3s ease);
+    margin-top: 30px;
+
+    &-label {
+        display: flex;
+        justify-content: flex-start;
+        padding: 1em;
+        cursor: pointer;
+        @include transition(all .3s ease);
+
+        @include breakpoint(mobileonly) {
+            padding-left: 0;
+        }
+
+        &::before {
+            content: "▶";
+            width: 1em;
+            height: 1em;
+            text-align: left;
+            transition: all .35s;
+            color: $primary;
+            margin-right: 20px;
+            transform: scale(2);
+            opacity: 0.3;
+
+            @include breakpoint(mobileonly) {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &-content {
+        max-height: 0;
+        padding: 0 1em;
+        left: calc(20px + 1em);
+        position: relative;
+        transition: all .35s;
+        width: 90%;
+
+        @include breakpoint(mobileonly) {
+            left: 0;
+            width: 100%;
+        }
+
+        a {
+            color: $primary;
+        }
+
+    }
+
+    &-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        cursor: pointer;
+    }
+}
+
+input:checked {
+    +.tab-label {
+        &::before {
+            content: "▶";
+            opacity: 1;
+        }
+    }
+
+    ~.tab-content {
+        max-height: 100vh;
+        padding: 0em 1em;
+    }
+}

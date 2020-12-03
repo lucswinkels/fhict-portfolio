@@ -1,0 +1,52 @@
+// Base Styling
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &:after,
+    &:before {
+        box-sizing: border-box;
+    }
+
+    &:active,
+    &:focus {
+        outline: 0;
+    }
+}
+
+// Body Styles
+body,
+html {
+    width: 100%;
+    background: $body-bg;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+// Scrollbars
+body::-webkit-scrollbar {}
+
+body::-webkit-scrollbar-thumb {}
+
+body::-webkit-scrollbar-button {}
+
+body::-webkit-scrollbar-corner {}
+
+body::-webkit-scrollbar-track {}
+
+// Selection
+::-moz-selection {}
+
+::selection {}
+
+
+// Flexbox variable
+%flexbox {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
