@@ -116,4 +116,46 @@ window.onload = function () {
         endDelay: 350,
         loop: true
     });
+
+    // Demo versie
+    var elementc1 = document.querySelectorAll('.preloader-demo .circle1');
+    var elementc2 = document.querySelectorAll('.preloader-demo .circle2');
+    var elementc3 = document.querySelectorAll('.preloader-demo .circle3');
+
+    // Roze
+    var preloaderc1 = anime({
+        targets: elementc1,
+        translateX: 40,
+        translateY: -40,
+        easing: 'easeInOutCubic',
+        duration: 600,
+        direction: 'alternate',
+        delay: 50,
+        endDelay: 350,
+        loop: true
+    });
+    // Paars
+    var preloaderc2 = anime({
+        targets: elementc2,
+        translateX: -40,
+        translateY: -40,
+        easing: 'easeInOutCubic',
+        duration: 600,
+        direction: 'alternate',
+        delay: 400,
+        endDelay: 100,
+        loop: true
+    });
+    // Blauw
+    var preloaderc3 = anime({
+        targets: elementc3,
+        translateY: 80,
+        easing: 'easeInOutCubic',
+        duration: 600,
+        direction: 'alternate',
+        delay: 200,
+        endDelay: 200,
+        loop: true
+    });
+
 }
