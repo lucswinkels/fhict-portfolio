@@ -3,6 +3,6 @@ jQuery(document).ready(function ($) {
     Body.addClass('preloader-site');
 });
 $(window).load(function () {
-    $('.preloader-wrapper').delay(2000).fadeOut("slow");
+    $('.preloader-wrapper').delay(3000).fadeOut(1000);
     $('body').removeClass('preloader-site');
 });

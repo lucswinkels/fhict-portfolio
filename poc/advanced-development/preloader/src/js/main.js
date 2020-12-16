@@ -83,38 +83,97 @@ window.onload = function () {
     // Roze
     var preloaderv3c1 = anime({
         targets: elementv3c1,
-        translateX: 40,
-        translateY: -40,
-        easing: 'easeInOutCubic',
-        duration: 600,
-        direction: 'alternate',
-        delay: 50,
-        endDelay: 350,
-        loop: true
+        translateY: [{
+                duration: 1000,
+                value: '-=60px',
+            },
+            {
+                duration: 1000,
+                value: '+=60px',
+            }, {
+                duration: 1000,
+                value: '+=0',
+            },
+        ],
+        translateX: [{
+                duration: 1000,
+                value: '-=40px',
+            }, {
+                duration: 1000,
+                value: '-=40px',
+            },
+            {
+                duration: 1000,
+                value: '+=80px',
+            }
+        ],
+        loop: true,
+        easing: 'easeInOutElastic(1, .6)'
     });
+
     // Paars
     var preloaderv3c2 = anime({
         targets: elementv3c2,
-        translateX: 40,
-        translateY: -40,
-        easing: 'easeInOutCubic',
-        duration: 600,
-        direction: 'alternate',
-        delay: 50,
-        endDelay: 350,
-        loop: true
+        translateY: [{
+                duration: 1000,
+                value: '+=0px',
+            },
+            {
+                duration: 1000,
+                value: '-=60px',
+            },
+            {
+                duration: 1000,
+                value: '+=60px',
+            }
+        ],
+        translateX: [{
+                duration: 1000,
+                value: '+=80px',
+            },
+            {
+                duration: 1000,
+                value: '-=40px',
+            },
+            {
+                duration: 1000,
+                value: '-=40px',
+            }
+        ],
+        loop: true,
+        easing: 'easeInOutElastic(1, .6)'
     });
     // Blauw
     var preloaderv3c3 = anime({
         targets: elementv3c3,
-        translateX: 40,
-        translateY: -40,
-        easing: 'easeInOutCubic',
-        duration: 600,
-        direction: 'alternate',
-        delay: 50,
-        endDelay: 350,
-        loop: true
+        translateY: [{
+                duration: 1000,
+                value: '+=60px',
+            },
+            {
+                duration: 1000,
+                value: '+=0px',
+            },
+            {
+                duration: 1000,
+                value: '-=60px',
+            }
+        ],
+        translateX: [{
+                duration: 1000,
+                value: '-=40px',
+            },
+            {
+                duration: 1000,
+                value: '+=80px',
+            },
+            {
+                duration: 1000,
+                value: '-=40px',
+            }
+        ],
+        loop: true,
+        easing: 'easeInOutElastic(1, .6)'
     });
 
     // Demo versie
@@ -125,37 +184,96 @@ window.onload = function () {
     // Roze
     var preloaderc1 = anime({
         targets: elementc1,
-        translateX: 40,
-        translateY: -40,
-        easing: 'easeInOutCubic',
-        duration: 600,
-        direction: 'alternate',
-        delay: 50,
-        endDelay: 350,
-        loop: true
+        translateY: [{
+                duration: 1000,
+                value: '-=60px',
+            },
+            {
+                duration: 1000,
+                value: '+=60px',
+            }, {
+                duration: 1000,
+                value: '+=0',
+            },
+        ],
+        translateX: [{
+                duration: 1000,
+                value: '-=40px',
+            }, {
+                duration: 1000,
+                value: '-=40px',
+            },
+            {
+                duration: 1000,
+                value: '+=80px',
+            }
+        ],
+        loop: true,
+        easing: 'easeInOutElastic(1, .6)'
     });
     // Paars
     var preloaderc2 = anime({
         targets: elementc2,
-        translateX: -40,
-        translateY: -40,
-        easing: 'easeInOutCubic',
-        duration: 600,
-        direction: 'alternate',
-        delay: 400,
-        endDelay: 100,
-        loop: true
+        translateY: [{
+                duration: 1000,
+                value: '+=0px',
+            },
+            {
+                duration: 1000,
+                value: '-=60px',
+            },
+            {
+                duration: 1000,
+                value: '+=60px',
+            }
+        ],
+        translateX: [{
+                duration: 1000,
+                value: '+=80px',
+            },
+            {
+                duration: 1000,
+                value: '-=40px',
+            },
+            {
+                duration: 1000,
+                value: '-=40px',
+            }
+        ],
+        loop: true,
+        easing: 'easeInOutElastic(1, .6)'
     });
     // Blauw
     var preloaderc3 = anime({
         targets: elementc3,
-        translateY: 80,
-        easing: 'easeInOutCubic',
-        duration: 600,
-        direction: 'alternate',
-        delay: 200,
-        endDelay: 200,
-        loop: true
+        translateY: [{
+                duration: 1000,
+                value: '+=60px',
+            },
+            {
+                duration: 1000,
+                value: '+=0px',
+            },
+            {
+                duration: 1000,
+                value: '-=60px',
+            }
+        ],
+        translateX: [{
+                duration: 1000,
+                value: '-=40px',
+            },
+            {
+                duration: 1000,
+                value: '+=80px',
+            },
+            {
+                duration: 1000,
+                value: '-=40px',
+            }
+        ],
+        loop: true,
+        easing: 'easeInOutElastic(1, .6)'
     });
 
 }
